@@ -1,0 +1,46 @@
+
+
+.corpo_texto {
+  background-color: rgb(71, 71, 71);
+  color: white;
+  width: 500px;
+  text-align: center;
+  align-content: center;
+}
+.imagem-kazu {
+  text-align: center;
+  background: linear-gradient(#e66465, #9198e5);
+  opacity: 50%;
+  width: 200px;
+  height: 200px;
+  animation: issoai 5s linear 0s infinite;
+  perspective: 800px;
+  /*animation-name: issoai;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: ;
+  animation-fill-mode: ;
+  transition troca animation */
+}
+.imagem-kazu:hover{
+  animation-play-state: paused;
+}
+
+@keyframes issoai {
+  0% {
+    transform: translate3d(0, 0 ,0);
+  }
+  0% {
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+
+  100% {
+    transform: translate3d(1320px, -400px, 0);
+  }
+  100% {
+    transform: rotate3d(1, 1, 1, 180deg);
+  }
+}
+
